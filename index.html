@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Cookie Consent</title>
+    </head>
+    <body>
+        <!-- start: cookie alert -->
+        <div id="cookieConsent" style="display: none">
+            <p>This website uses cookies so that we can provide you with the best user experience. Get more information
+                <a href="#">here</a>.</p>
+            <p class="cookieConsent-c">Hide</p>
+        </div>
+        <!-- end: cookie alert -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="cookieConsent.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                // init cookie consent, param.: cookie lifetime in days
+                jqueryCookieConsent.initialize(365);
+            });
+        </script>
+    </body>
+</html>
